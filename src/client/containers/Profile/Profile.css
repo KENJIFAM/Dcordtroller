@@ -1,0 +1,69 @@
+.dc-card {
+  width: 500px;
+  margin-top: 16px;
+  border-radius: 8px;
+  border: 2px solid #202225;
+  background-color: #292b2f;
+}
+
+.dc-card-avatar {
+  width: 100px;
+  height: 100px;
+}
+
+.dc-card-title {
+  color: #5f6164;
+  font-weight: 700;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.dc-card-username {
+  color: #b9bbbe;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.dc-card-list {
+  list-style-type: none;
+  color: #b9bbbe;
+  padding: 0;
+  font-size: 16px;
+}
+
+.dc-card-btn {
+  position: relative;
+  background-color: #7289da;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.dc-card-btn:hover {
+  background-color: #677bc4;
+  color: white;
+}
+
+.dc-connect-btn {
+  margin-top: 20px;
+}
+
+.dc-disconnect-btn {
+  position: relative;
+  float: right;
+  width: 100px;
+}
+
+.dc-invite-btn {
+  position: absolute;
+  right: 24px;
+  top: 70px;
+  display: block;
+  width: 100px;
+}
+
+.dc-info {
+  color: white;
+  margin-top: 20px;
+}
