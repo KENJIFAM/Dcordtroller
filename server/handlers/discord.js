@@ -4,7 +4,7 @@ const db = require("../models");
 
 const CLIENT_ID = process.env.CLIENT_ID;
 const CLIENT_SECRET = process.env.CLIENT_SECRET;
-const redirect = encodeURIComponent("http://localhost:3000/main/user");
+const redirect = encodeURIComponent("https://dcordtroller.herokuapp.com/main/user");
 
 exports.connect = async function(req, res, next) {
   try {
