@@ -24,7 +24,6 @@ class connectionToDiscord extends Component {
     const client = new Discord.Client();
     client.login("NDg2NDgzMTc3NjI0MzA1Njc0.DnEGnA.0e9GJA_nkFkXLTbxePjfaqkrNIM");
     client.on("ready", () => {
-      console.log(`Logged in as ${client.user.tag}!`);
       let listOfGuilds = [];
       const listOfGuildsFormat = client.guilds.array();
       for (let i = 0; i < listOfGuildsFormat.length; i++) {
@@ -39,15 +38,14 @@ class connectionToDiscord extends Component {
           });
         });
         listOfGuildsFormat[i].channels.array().forEach(element => {
-          if (element.type == "voice") {
+          if (element.type === "voice") {
             listOfGuildVoiceChannels.push(element);
           }
         });
         for (let x = 0; x < listOfGuildsFormat[i].members.array().length; x++) {
           if (
             listOfGuildsFormat[i].members
-              .array()
-              [x].permissions.has("KICK_MEMBERS")
+              .array()[x].permissions.has("KICK_MEMBERS")
           ) {
             listOfServerAdmins.push(
               listOfGuildsFormat[i].members.array()[x].user

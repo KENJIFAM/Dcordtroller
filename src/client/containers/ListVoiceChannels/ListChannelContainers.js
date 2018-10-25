@@ -1,5 +1,5 @@
 import React, { Fragment, Component } from "react";
-import { Col, Row } from "antd";
+import { Row } from "antd";
 import ListServer from "../../components/ListServer/ListServer";
 import ListVoiceChannel from "../../components/ListVoiceChannel/ListVoiceChannel";
 
@@ -30,6 +30,7 @@ class ListChannelContainer extends Component {
       if (listOfGuilds[i].server === serverName) {
         let generalObject = listOfGuilds[i].serverObject.channels.array()[1];
         generalObject.send(
+          // eslint-disable-next-line
           "!" + voiceChannelName + ";" + serverName + ";" + "<" + url + ">"
         );
       }

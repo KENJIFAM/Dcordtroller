@@ -26,9 +26,9 @@ const ListUserActive = (props) => {
         for (let i = 0; i < listOfGuilds.length; i++) {
             if (listOfGuilds[i].server === server) {
                 for (let x = 0; x < listOfGuilds[i].usersActive.length; x++) {
-                    if (listOfGuilds[i].serverAdmins.includes(listOfGuilds[i].usersActive[x])) 
+                    if (listOfGuilds[i].serverAdmins.includes(listOfGuilds[i].usersActive[x]))
                         listOfAdminsInServer.push(listOfGuilds[i].usersActive[x]);
-                    else 
+                    else
                         listOfMembersInServer.push(listOfGuilds[i].usersActive[x]);
                 }
             }
@@ -44,7 +44,7 @@ const ListUserActive = (props) => {
                         <List.Item
                             actions={
                                 [
-                                    <img className="admin-symbol"src="https://www.freeiconspng.com/uploads/crown-icon-28.png" width="10%" height="10%" align="right"/>
+                                    <img className="admin-symbol" src="https://www.freeiconspng.com/uploads/crown-icon-28.png" alt="" width="10%" height="10%" align="right"/>
                                 ]
                             }
                         >

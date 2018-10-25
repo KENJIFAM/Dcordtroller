@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ListChannelContainer from "./ListChannelContainers";
-import { Spin, Icon, Col, Row } from "antd";
+import { Spin, Icon, Col } from "antd";
 
 class ListVoiceChannelContainers extends Component {
   constructor(props) {

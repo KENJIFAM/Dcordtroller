@@ -1,5 +1,5 @@
-import React, { Fragment, Component } from "react";
-import { List, Card, Icon, Col, Row } from "antd";
+import React from "react";
+import { List, Card, Icon, Col } from "antd";
 import "./ListServer.css";
 
 const ListServer = props => {

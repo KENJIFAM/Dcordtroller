@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { Select,Button,Icon } from 'antd';
 import axios from 'axios'
 const Option = Select.Option;
-class BlacklistWords extends React.Component {
+class BlacklistWords extends Component {
     constructor(props){
         super(props);
         this.state = {
@@ -42,7 +42,7 @@ class BlacklistWords extends React.Component {
             })
     }
     render() {
-        const {disabled,editBtnDisabled,saveBtnDisabled,blackListWords} = this.state;
+        const {disabled,editBtnDisabled,saveBtnDisabled} = this.state;
         const {listOfBannedWords} = this.props
         const children = [];
         for (let i = 0; i < listOfBannedWords.length; i++) {

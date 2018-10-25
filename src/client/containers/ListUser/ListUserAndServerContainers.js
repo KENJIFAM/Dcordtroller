@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ListServerContainer from "./ListServerContainers";
-import { Spin, Icon, Col, Row } from "antd";
+import { Spin, Icon, Col } from "antd";
 
 class ListUserContainers extends Component {
   constructor(props) {

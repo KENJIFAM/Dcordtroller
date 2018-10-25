@@ -1,9 +1,8 @@
-import React, { Component } from 'react'
-import axios from 'axios'
-class detectBadLanguage extends Component {
-    constructor(props) {
+import React from 'react'
+class detectBadLanguage extends React.Component {
+    /*constructor(props) {
         super(props);
-    }
+    }*/
 
     shouldComponentUpdate(nextProps, nextState) {
         return !(this.props.msg && this.props.msg.contentMsg === nextProps.msg.contentMsg

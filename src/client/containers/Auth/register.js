@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Form, Input, Button, Icon, Modal } from "antd";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./register.css";
 import Auth from "../../services/auth";
 
@@ -56,7 +56,7 @@ class Register extends Component {
   compareToFirstPassword = (rule, value, callback) => {
     const form = this.props.form;
     if (value && value !== form.getFieldValue("password")) {
-      callback("Two passwords that you enter is inconsistent!");
+      callback("Two passwords that you enter are different!");
     } else {
       callback();
     }
@@ -98,7 +98,7 @@ class Register extends Component {
             )}
           </FormItem>
           <FormItem className="login-field">
-            <h5 className="login-field-name">USERNAME</h5>
+            <h5 className="login-field-name">EMAIL</h5>
             {getFieldDecorator("email", {
               rules: [{ required: true, message: "Please input your email!" }]
             })(

@@ -1,4 +1,4 @@
-import React, { PureComponent, Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { Route, Switch, BrowserRouter } from 'react-router-dom'
 import 'antd/dist/antd.css'
 import './index.css';

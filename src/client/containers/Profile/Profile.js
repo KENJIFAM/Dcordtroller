@@ -32,14 +32,13 @@ class Profile extends Component {
 
   handleConnect = () => {
     window.location =
-      "https://discordapp.com/oauth2/authorize?client_id=493788991380783106&response_type=code&scope=identify%20email%20guilds&redirect_uri=http://localhost:3000/main/user";
+      "https://discordapp.com/oauth2/authorize?client_id=493788991380783106&response_type=code&scope=identify%20email%20guilds&redirect_uri=https://dcordtroller.herokuapp.com/main/user";
   };
 
   handleDisconnect = () => {
     this.discord
       .disconnect(this.props.user.username)
       .then(res => {
-        console.log(res.message);
         this.setState({
           discordConnect: false,
           discordAccount: null
@@ -57,7 +56,6 @@ class Profile extends Component {
           discordAccount: res
         })
       )
-      .then(res => console.log(this.state))
       .catch(err => console.log(err.message));
   };
 
@@ -71,7 +69,6 @@ class Profile extends Component {
           this.props.user.username,
           code
         )
-        .then(res => console.log(res.message))
         .then(res => this.getProfile())
         .catch(err => console.log(err.message));
     }
@@ -145,6 +142,7 @@ class Profile extends Component {
               <Button className="dc-card-btn dc-invite-btn">
                 <a
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://discordapp.com/oauth2/authorize?client_id=486483177624305674&scope=bot&permissions=8"
                 >
                   Invite Bot

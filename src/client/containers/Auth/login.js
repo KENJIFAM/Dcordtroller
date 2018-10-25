@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Form, Icon, Input, Button } from "antd";
 import "./login.css";
 import Auth from "../../services/auth";

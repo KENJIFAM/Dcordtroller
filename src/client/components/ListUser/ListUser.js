@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from "react";
-import { List, Card, Button, Icon, Col, Modal } from "antd";
+import React, { Component } from "react";
+import { Card, Icon, Col } from "antd";
 import "./ListUser.css";
 import ListUserActive from "./ListUserActive";
 import ListUserBan from "./ListUserBan";

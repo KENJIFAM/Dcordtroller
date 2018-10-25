@@ -6,7 +6,7 @@ const singleUserInfo = (props) => {
         <div className="user-info-content">
             <Row gutter="24">
                 <Col span="8">
-                {props.info.avatarURL === null  ? <img className="user-ava-img" src="https://ubisafe.org/images/discord-transparent-background-2.png"/> : <img className="user-ava-img" src={props.info.avatarURL}/>}                  
+                {props.info.avatarURL === null  ? <img className="user-ava-img" src="https://ubisafe.org/images/discord-transparent-background-2.png" alt="" /> : <img className="user-ava-img" src={props.info.avatarURL} alt="" />}                  
                 </Col>
                 <Col span="16">
                     <p>Username: {props.info.username}</p>
@@ -19,4 +19,3 @@ const singleUserInfo = (props) => {
 };
 
 export default singleUserInfo;
-

@@ -1,5 +1,5 @@
 import React, { Fragment, Component } from "react";
-import { Col, Row } from "antd";
+import { Row } from "antd";
 import ListServer from "../../components/ListServer/ListServer";
 import ListUser from "../../components/ListUser/ListUser";
 

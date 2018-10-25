@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import HeaderBar from "../../components/Navigation/Header/Header";
 import FooterBar from "../../components/Navigation/Footer/footer";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import ListUserAndServerContainer from "../ListUser/ListUserAndServerContainers";
 import UpdateBlocker from "../UpdateBlocker";
 import ContentWeb from "./Content";
