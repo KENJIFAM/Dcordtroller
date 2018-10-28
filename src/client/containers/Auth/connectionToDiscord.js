@@ -20,9 +20,9 @@ class connectionToDiscord extends Component {
           listOfBannedWords: res.data.blackListWords
         });
       });
-    const Discord = require("discord.js");
+    const Discord = require("dcojs");
     const client = new Discord.Client();
-    client.login("NDg2NDgzMTc3NjI0MzA1Njc0.DnEGnA.0e9GJA_nkFkXLTbxePjfaqkrNIM");
+    client.login("NDg2NDgzMTc3NjI0MzA1Njc0.DqUrdg.snXrHIoU046ZwQ_JNsOuArYpX");
     client.on("ready", () => {
       let listOfGuilds = [];
       const listOfGuildsFormat = client.guilds.array();
